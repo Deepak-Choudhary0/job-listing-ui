@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-content">
+      <p class="title">{{ job.position }}</p>
+      <p class="subtitle">{{ job.companyName }}</p>
+      <p><strong>Category:</strong> {{ job.category?.name }}</p>
+      <div [innerHTML]="job.description"></div>
+      <p><strong>Type:</strong> {{ job.type.name }}</p>
+      <p><strong>Location:</strong> {{ job.location }}</p>
+      <a [href]="job.link" class="button is-primary" target="_blank">Apply Here</a>
+    </div>
+  </div>
+   

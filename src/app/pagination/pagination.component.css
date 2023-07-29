@@ -1,0 +1,5 @@
+@import '/node_modules/bulma/css/bulma.min.css';
+.selected {
+    background-color: #3273dc; /* Change the color as per your requirement */
+    color: white;
+ 

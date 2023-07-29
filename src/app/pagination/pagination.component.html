@@ -1,0 +1,14 @@
+<nav class="pagination is-centered" role="navigation" aria-label="pagination">
+  <a class="pagination-previous" (click)="goToPreviousPage()">Previous</a>
+  <a class="pagination-next" (click)="goToNextPage()">Next</a>
+  <ul class="pagination-list">
+    <li *ngFor="let pageNumber of getPageNumbers()" 
+        [class.is-current]="pageNumber === currentPage"
+        (click)="goToPage(pageNumber)">
+      <a class="pagination-link" [attr.aria-label]="'Page ' + pageNumber"
+        [attr.aria-current]="pageNumber === currentPage ? 'page' : null"
+        [class.selected]="pageNumber === currentPage">{{ pageNumber }}</a>
+    </li>
+  </ul>
+</nav>
+ 
